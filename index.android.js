@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import LoginPage from './components/LoginPage.js'
 import SuccessPage from './components/SuccessPage.js'
 import FailurePage from './components/FailurePage.js'

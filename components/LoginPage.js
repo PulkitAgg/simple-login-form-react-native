@@ -11,25 +11,20 @@ export default class LoginPage extends Component {
           };
      }
      setPassword(pass) {
-          console.log("in someFunction",pass);
           this.setState({password:pass});
      }
      setEmail(input) {
-          console.log("i ma in show",input);
           this.setState({input:input});
      }
      login(a,b){
           if(this.state.password == this.state.input){
-               console.log("success");
-               this.props.navigation.navigate('Success')
-               this
+               this.props.navigation.navigate('Success');
           }else {
                console.log("fail");
                this.props.navigation.navigate('Failure')
           }
      }
      render() {
-          var input;
           return (
                <View >
                     <FormLabel>Email Id</FormLabel>
@@ -62,28 +57,3 @@ export default class LoginPage extends Component {
           );
      }
 }
-
-// const styles = StyleSheet.create({
-//      container: {
-//           flex: 1,
-//           justifyContent: 'center',
-//           alignItems: 'center',
-//           backgroundColor: '#F5FCFF'
-//      },
-//      welcome: {
-//           fontSize: 20,
-//           textAlign: 'center',
-//           margin: 10
-//      },
-//      instructions: {
-//           textAlign: 'center',
-//           color: '#333333',
-//           marginBottom: 5
-//      },
-//      input: {
-//           margin: 15,
-//           height: 40,
-//           borderColor: '#7a42f4',
-//           borderWidth: 1
-//      }
-// });
